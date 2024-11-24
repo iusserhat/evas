@@ -1,0 +1,44 @@
+/* Genel container */
+
+.about-container {
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card */
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff; /* Card arka planı */
+    color: #000000; /* Card yazı rengi */
+    box-shadow: 0 4px 8px rgba(202, 88, 88, 0.1); /* Hafif gölge efekti */
+    border-radius: 15px; /* Yuvarlatılmış köşeler */
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%; /* Ekran boyutuna göre ayarlanabilir */
+}
+
+/* Soldaki metin alanı */
+.about-text {
+    font-size:large;
+    flex: 1;
+    text-align: left;
+}
+
+/* Sağdaki görsel alanı */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-m {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+

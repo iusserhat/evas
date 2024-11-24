@@ -1,0 +1,78 @@
+/* Updated styles for the form container */
+.contact-card {
+    background-color: var(--card-bg-color, #fff);
+    color: var(--text-color, #000);
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Increased max-width for a larger card */
+    margin: 0 auto;
+    width: 100%; /* Ensures the card takes full available width up to max-width */
+  }
+  
+  /* Dark Mode */
+  body.dark-mode .contact-card {
+    background-color: var(--card-bg-dark, #333);
+    color: var(--text-dark, #fff);
+  }
+  
+  .contact-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Increased space between form elements */
+  }
+  
+  label {
+    margin-bottom: 8px; /* More space for labels */
+    font-size: 16px;
+  }
+  
+  input,
+  textarea {
+    padding: 12px; /* Increased padding for input fields */
+    border: 1px solid var(--input-border-color, #ccc);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 150px; /* Increased height for the textarea */
+  }
+  
+  button {
+    padding: 12px 25px; /* Increased button padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dark Mode Specific Styling for Inputs and Labels */
+  body.dark-mode .form-group label {
+    color: var(--label-dark, #ccc);
+  }
+  
+  body.dark-mode input,
+  body.dark-mode textarea {
+    background-color: var(--input-bg-dark, #444);
+    color: var(--input-text-dark, #fff);
+    border-color: var(--input-border-dark, #555);
+  }
+  
+  body.dark-mode button {
+    background-color: #0056b3;
+  }
+  
+  body.dark-mode button:hover {
+    background-color: #004085;
+  }
+  

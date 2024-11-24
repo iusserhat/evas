@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Güneş -->
+  <circle cx="100" cy="100" r="40" fill="yellow" />
+  
+  <!-- Güneşin Işınları -->
+  <line x1="100" y1="100" x2="100" y2="40" stroke="yellow" stroke-width="5" />
+  <line x1="100" y1="100" x2="140" y2="100" stroke="yellow" stroke-width="5" />
+  <line x1="100" y1="100" x2="100" y2="160" stroke="yellow" stroke-width="5" />
+  <line x1="100" y1="100" x2="60" y2="100" stroke="yellow" stroke-width="5" />
+  <line x1="100" y1="100" x2="130" y2="130" stroke="yellow" stroke-width="5" />
+  <line x1="100" y1="100" x2="70" y2="130" stroke="yellow" stroke-width="5" />
+  <line x1="100" y1="100" x2="130" y2="70" stroke="yellow" stroke-width="5" />
+  <line x1="100" y1="100" x2="70" y2="70" stroke="yellow" stroke-width="5" />
+</svg>

@@ -1,0 +1,66 @@
+.project-grid {
+    display: grid; /* Grid düzeni */
+    grid-template-columns: repeat(3, 1fr); /* Her satırda 3 sütun */
+    gap: 20px; /* Kartlar arasındaki boşluk */
+    margin: 20px; /* Çevresel boşluk */
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey olarak hizala */
+    align-items: center; /* İçeriği yatay olarak ortala */
+    border: 1px solid #ccc; /* Çerçeve */
+    border-radius: 8px; /* Köşeleri yuvarla */
+    padding: 15px; /* İç boşluk */
+    text-align: center; /* Metni ortala */
+    background-color: #f9f9f9; /* Arka plan rengi */
+    transition: transform 0.3s; /* Hover büyüme efekti */
+    overflow: hidden; /* Kart sınırından taşmayı engeller */
+   margin-bottom: 30px;
+}
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Hover animasyonu */
+  }
+  
+  .project-image {
+    width: 100%; /* Kart genişliğine göre ölçeklendir */
+    max-height: 200px; /* Görsel yüksekliğini sınırla */
+    object-fit: cover; /* Görseli düzgün şekilde keser */
+    border-radius: 5px; /* Görselin köşelerini yuvarla */
+  }
+  
+  .project-card p {
+    color: #333; /* Varsayılan yazı rengi */
+  }
+  
+  .dark-mode .project-card p {
+    color: #ccc; /* Dark mode yazı rengi */
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #5e40e6; /* Link arka plan rengi */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    transition: background-color 0.3s; /* Hover efekti */
+  }
+  
+  .project-link:hover {
+    background-color: #a100b3; /* Hover arka plan rengi */
+  }
+  
+   h1 {
+    color: #950d0d; /* Varsayılan başlık rengi (koyu gri) */
+  }
+
+  #projects .project-card h2 {
+    color: #3d558d;
+    margin-bottom: 10px;
+  }
+  
+  
+  

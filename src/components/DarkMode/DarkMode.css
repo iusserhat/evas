@@ -1,0 +1,32 @@
+/* DarkMode.css */
+
+.hidden {
+    display: none;
+  }
+  
+  body[data-theme='dark'] {
+    background-color: #333;
+    color: white;
+  }
+  
+  body[data-theme='light'] {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark_mode_input {
+    display: none; /* Checkbox'ı gizle */
+  }
+  
+  .dark_mode_label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dark_mode_label svg {
+    width: 30px; /* SVG'nin boyutunu ayarlayın */
+    height: 30px;
+  }
+  
+  
