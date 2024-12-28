@@ -1,19 +1,70 @@
-.anasayfa-title {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color:black
+/* Add these styles to anasayfa.css */
+
+#anasayfa {
+  text-align: center;
+}
+
+.anasayfa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .video-container {
-    display: flex;
-    justify-content: center; /* Video sağa yaslanır */
-    padding-bottom:50px;
-    margin-bottom: 20px; /* Aşağıya 20px boşluk bırakır */
+  margin-top: 20px;
 }
-  
-  .anasayfa-video {
-    width: 60%; /* Sayfanın yarısını kaplar */
-    height: auto;
-    border-radius: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
 
+.anasayfa-video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.storybar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.story-item {
+  width: 70px; /* Set the width for the circular video */
+  height: 70px; /* Set the height for the circular video */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer; /* Indicate that it's clickable */
+}
+
+.story-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Modal Styles */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+}
+
+.video-modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.modal-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

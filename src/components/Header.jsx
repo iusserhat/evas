@@ -15,17 +15,18 @@ function Header() {
         <header>
             <nav className="navbar">
                 <Link to = '/'>
-                <img src="/logom.jpg" alt="Radikal Mühendis" className="logo-img" />
+                <img src="/logos.png" alt="Radikal Mühendis" className="logo-img" />
 
                 </Link>
                 <button className="menu-toggle" onClick={toggleMenu}>
                     ☰
                 </button>
                 <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-                <li><Link to="/anasayfa">AnaSayfa</Link></li>
-                    <li><Link to="/">About</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/anasayfa">Akış</Link></li>
+                    <li><Link to="/">Hakkında</Link></li>
+                    <li><Link to="/projects">Eğitim ve Kariyer</Link></li>
+                    <li><Link to="/map">Harita</Link></li>
+                    <li><Link to="/contact">İletişim</Link></li>
                    
              </ul>
             </nav>
